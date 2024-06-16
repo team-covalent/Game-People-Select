@@ -41,7 +41,7 @@ def main():
     elif criteria == "std_dev":
         sorted_criteria = ["Level", "Attack", "Defense"]
     else:
-        print("Invalid criteria. Defaulting to average.")
+        print("유효하지않는 입력, 평균으로 설정합니다.")
         sorted_criteria = ["Level", "Attack", "Defense"]
     
     teams_df = allocate_teams(player_df, num_teams, sorted_criteria)
